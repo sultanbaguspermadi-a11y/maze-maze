@@ -1,0 +1,15 @@
+{
+  "name": "kalimah-maze",
+  "version": "0.1.0",
+  "description": "Kalimah Maze: Chronicles of the Lost Bazaar — Arabic-learning pixel-art adventure (dependency-free ES modules + Canvas)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "validate": "node tools/validate-content.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node tools/validate-content.mjs && node --test tests/*.test.mjs",
+    "smoke": "node tools/smoke.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

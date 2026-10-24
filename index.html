@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#14101c">
+  <meta name="description" content="Kalimah Maze: Chronicles of the Lost Bazaar — petualangan piksel untuk belajar bahasa Arab.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="public/icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="public/icons/icon-192.png">
+  <title>Kalimah Maze — Chronicles of the Lost Bazaar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app" data-open="0">
+    <div id="viewport"><canvas id="game" aria-label="Pasar Pagi" role="img"></canvas></div>
+    <div id="hud" hidden>
+      <div id="hud-left">
+        <div id="objective" role="status"><span class="olabel">Tujuan</span><span id="obj-text"></span><span id="obj-prog" class="prog"></span></div>
+        <div id="bag" aria-label="Tas"></div>
+      </div>
+      <div id="hud-right">
+        <span id="purse-wrap" title="Dompet"><span aria-hidden="true">◎</span> <span id="purse">10</span> <span class="unit">dirham</span></span>
+        <button id="btn-journal" type="button" aria-label="Jurnal"><span class="b-ico" aria-hidden="true">▤</span><span class="b-txt">Jurnal</span></button>
+        <button id="btn-menu" type="button" aria-label="Jeda dan menu"><span class="b-ico" aria-hidden="true">❚❚</span><span class="b-txt">Menu</span></button>
+      </div>
+      <div id="prompt" hidden></div>
+      <div id="toasts" aria-live="polite"></div>
+    </div>
+    <div id="touch" hidden></div>
+    <div id="overlay"></div>
+    <div id="screen" hidden></div>
+    <noscript><p class="noscript">Kalimah Maze membutuhkan JavaScript.</p></noscript>
+  </div>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
